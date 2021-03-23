@@ -24,7 +24,9 @@ public class TelaTres {
 		
 		int quantidade = Integer.parseInt(JOptionPane.showInputDialog("Quantidade"));
 		
-		TresOperador dados = new TresOperador(nome,preco,quantidade);
+		double peso = Double.parseDouble(JOptionPane.showInputDialog("Peso: "));
+		
+		TresOperador dados = new TresOperador(nome,preco,quantidade,peso);
 		
 		
 		JOptionPane.showMessageDialog(null, dados);
